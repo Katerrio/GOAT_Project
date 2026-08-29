@@ -1,0 +1,263 @@
+html,
+body {
+    min-height: 100vh;
+    margin: 0;
+}
+
+.multi-background {
+    background-color: black;
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url("C:\\Users\\Base Camp\\Downloads\\City-PNG-Picture.png"),
+        url(https://img.freepik.com/premium-photo/dark-cybersecurity-background-with-red-black-lines_1191898-17747.jpg);
+
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom center, center;
+    background-size: cover, cover;
+    background-attachment: fixed;
+}
+
+.special_title {
+    text-align: center;
+    font-size: 200px;
+    color: #df0d3b;
+    text-shadow: 2px 4px 14px maroon, 2px 4px 24px blue;
+}
+
+.center {
+    text-align: center;
+    font-size: 175%;
+}
+
+.shiny-container {
+    position: relative;
+    /* Dimensions & Centering */
+    max-width: 600px;
+    width: 100%;
+    margin: 10px auto;
+
+
+    /* Visual Aesthetics */
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 8px solid rgba(255, 255, 255, 0.5);
+    border-radius: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+
+.shiny-container-2 {
+    position: relative;
+    /* Dimensions & Centering */
+    max-width: 600px;
+    width: 100%;
+    margin: 10px;
+
+
+    /* Visual Aesthetics */
+    background: transparent;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* The animated shine overlay */
+.shiny-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.5) 50%,
+            rgba(255, 255, 255, 0) 100%);
+    transform: skew(-25deg);
+    animation: shine 5s ease-in-out infinite;
+}
+
+
+@keyframes shine {
+    0% {
+        left: -150%
+    }
+
+    100% {
+        left: 150%
+    }
+
+}
+
+/* Creates the button */
+.button {
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: black;
+    border: 4px solid #df0d3b;
+    color: #df0d3b;
+    border-radius: 25%;
+    width: max-content;
+    height: max-content;
+    padding: 4px 8px;
+    margin: 4px auto;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: #df0d3b;
+    color: black;
+}
+
+.font_expression_left {
+    display: inline-block;
+    color: #df0d3b;
+    border: 4px solid maroon;
+    background: linear-gradient(135deg, black, gray, black);
+    width: 45%;
+    border-radius: 20%;
+    padding: 6%;
+}
+.font_expression_right {
+    display: block;
+    color: #df0d3b;
+    border: 4px solid maroon;
+    background: linear-gradient(45deg, black, gray, black);
+    width: 50%;
+    border-radius: 20%;
+    padding: 6%;
+    margin-left: auto;
+    
+}
+
+.font_expression_center {
+    display: block;
+    color: #df0d3b;
+    border: 4px solid maroon;
+    border-left-color: #0ff0fc;
+    border-right-color: #0ff0fc;
+    background: linear-gradient(to right, black, gray, black);
+    width: 50%;
+    border-radius: 20%;
+    padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.section_header {
+    font-family:'Orbitron', sans-serif;
+    display: block;
+    color: #df0d3b;
+    border: 4px solid maroon;
+    background:linear-gradient(to bottom, goldenrod, #0ff0fc);
+    width: 50%;
+    border-radius: 20%;
+    margin-left: 5%;
+    padding: 5%;
+
+}
+
+.section_bottom {
+    font-family: 'Chakra Petch', sans-serif;
+    display: block;
+    color: #df0d3b;
+    border: 4px solid maroon;
+    background: linear-gradient(to bottom, #0ff0fc, goldenrod);
+    width: 50%;
+    border-radius: 20%;
+    margin-left: 30%;
+   /* margin-bottom: 10%;*/
+    margin-top: -10%;
+    padding: 10%;
+}
+
+.section_center {
+    font-family:'Orbitron', sans-serif;
+    display: block;
+    color: #df0d3b;
+    border: 4px solid maroon;
+    background: linear-gradient(to right, #0ff0fc, goldenrod);
+    width: 50%;
+    border-radius: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+
+}
+
+.section_bottom_2 {
+    box-sizing: border-box;
+    font-family: 'Chakra Petch', sans-serif;
+    display: block;
+    color: #df0d3b;
+    border: 4px solid maroon;
+    background: linear-gradient(to right, rgb(9, 248, 9), green);
+    width: 50%;
+    border-radius: 20%;
+    margin-left: 50%;
+   /* margin-bottom: 10%;*/
+    margin-top: -10%;
+    padding: 2%;
+}
+
+.crime_expression_center {
+    display: block;
+    color: #df0d3b;
+    border: 4px solid maroon;
+    background: linear-gradient(to right, black, gray, black);
+    width: 80%;
+    border-radius: 20%;
+    padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.crime_header {
+    font-family: 'Chakra Petch', sans-serif;
+    display: block;
+    color: #df0d3b;
+    border: 4px solid maroon;
+    background:linear-gradient(135deg, goldenrod, #0ff0fc);
+    width: 50%;
+    border-radius: 20%;
+    margin-left: 5%;
+    padding: 2%;
+
+}
+
+.crime_bottom {
+    font-family: 'Chakra Petch', sans-serif;
+    display: block;
+    color: #df0d3b;
+    border: 4px solid maroon;
+    background: linear-gradient(135deg, #0ff0fc, goldenrod);
+    width: 50%;
+    border-radius: 20%;
+    margin-left: 30%;
+   /* margin-bottom: 10%;*/
+    margin-top: -10%;
+    padding: 2%;
+}
+
+.cyberpunk_title {
+      font-family:'Orbitron', sans-serif;
+      color: #df0d3b;
+      font-size: 100%;
+}
+.cyberpunk_text {
+    font-family: 'Chakra Petch', sans-serif;
+}
